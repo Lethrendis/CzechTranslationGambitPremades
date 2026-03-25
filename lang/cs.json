@@ -1,0 +1,1412 @@
+{
+  "GAMBITSPREMADES": {
+    "ChatMessages": {
+      "Common": {
+        "OptionAvailableSaveTrigger": "{actorName} má k dispozici možnost při záchraně vyvolanou {itemProperName}.",
+        "ReactionAvailableAttackTrigger": "{actorName} má k dispozici reakci na útok vyvolanou {itemProperName}.",
+        "ReactionAvailableRollTrigger": "{actorName} má k dispozici reakci na hod vyvolanou {itemProperName}.",
+        "ReactionAvailableSaveTrigger": "{actorName} má k dispozici reakci na záchranu vyvolanou {itemProperName}.",
+        "ReactionAvailableSpellTrigger": "{actorName} má k dispozici reakci na kouzlo vyvolanou {itemProperName}."
+      },
+      "Automations": {
+        "ThirdPartyClassFeatures": {
+          "Witch": {
+            "WitchesHex": {
+              "HexReducedAttackHit": "Bytost byla prokleta kletbou, která snížila její útok o {reduction}, ale přesto zasáhla svůj cíl.",
+              "HexReducedAttackMiss": "Bytost byla prokleta kletbou, která snížila její útok o {reduction}, a nedokázala zasáhnout svůj cíl.",
+              "SaveFailed": "Bytost byla prokleta a neuspěla v záchraně.",
+              "SaveSucceeded": "Bytost byla prokleta, ale přesto uspěla v záchraně."
+            },
+            "CovenOfTheRoilingHearth": {
+              "SootSpiritAttackedHit": "Bytost zaútočila na jednoho z tvých duchů sazí a zasáhla! Zbývá ti {sootSpiritsRemaining} duchů sazí.",
+              "SootSpiritAttackedMiss": "Bytost zaútočila na jednoho z tvých duchů sazí a minula! Zbývá ti {sootSpiritsRemaining} duchů sazí."
+            }
+          },
+          "Wizard": {
+            "Chronurgist": {
+              "ChronalShift": {
+                "AllySaveFailed": "Tvůj spojenec byl chronálně posunut, ale přesto neuspěl v záchraně.",
+                "AllySaveSucceeded": "Tvůj spojenec byl chronálně posunut a uspěl v záchraně.",
+                "AttackFailed": "Bytost byla chronálně posunuta a její útok neuspěl.",
+                "AttackHitAnyway": "Bytost byla chronálně posunuta, ale přesto dokázala zasáhnout svůj cíl.",
+                "EnemySaveFailed": "Tvůj nepřítel byl chronálně posunut a neuspěl v záchraně.",
+                "EnemySaveSucceeded": "Tvůj nepřítel byl chronálně posunut, ale přesto uspěl v záchraně."
+              }
+            }
+          }
+        },
+        "ThirdPartySpells": {
+          "ContagiousHealing": {
+            "NoAdditionalAlliesInRange": "V okruhu 3 sáhů nejsou žádní další spojenci, tvé Nakažlivé léčení odeznívá."
+          },
+          "DrafynsBaneOfExcellence": {
+            "Natural20CancelledAttack": "Tvá přirozená 20 byla zrušena kvůli Drafynovu prokletí dokonalosti a útok selhává.",
+            "Natural20CancelledSave": "Tvá přirozená 20 byla zrušena kvůli Drafynovu prokletí dokonalosti a tvůj záchrana selhává."
+          },
+          "ShroomOfDoom": {
+            "MushroomCreatedOnBody": "Bytosti vyrostla na těle {mushroomCount} houba vlivem Pekelné houby.",
+            "MushroomsCreatedOnBody": "Bytosti vyrostly na těle {mushroomCount} houby vlivem Pekelné houby."
+          }
+        },
+        "ClassFeatures": {
+          "Artificer": {
+            "FlashOfGenius": {
+              "UsedAddedSRoll": "{actorName} použil/a {itemName} a přidal/a {intMod} k hodu postavy {targetName}."
+            }
+          },
+          "Bard": {
+            "CollegeOfLore": {
+              "CuttingWords": {
+                "CuttingWordsReducedAttackHit": "Bytost zasáhla Řezavým slovem, které snížilo její útok o {reduction}, ale přesto dokázala zasáhnout svůj cíl.",
+                "CuttingWordsReducedAttackMiss": "Bytost zasáhla Řezavým slovem, které snížilo její útok o {reduction}, a nedokázala zasáhnout svůj cíl.",
+                "DamageReduced": "Bytost zasáhla Řezavým slovem a její zranění je sníženo o {reduction}.",
+                "ReactionAvailable": "{actorName} má k dispozici reakci na {workflowType} vyvolané {itemProperName}.",
+                "SeemsNotBeEffectedBy": "Zdá se, že bytost není ovlivněna tvým {itemProperName}."
+              }
+            },
+            "CollegeOfTragedy": {
+              "PoetryInMisery": {
+                "SoliloquizeOverRegain": "Použiješ {itemProperName}, abys pronesl/a solilokvium nad {typeText} a obnovil/a si jedno použití Bardské inspirace."
+              },
+              "TaleOfHubris": {
+                "IncreaseCriticalThreshold": "Použiješ {itemProperName} a zvýšíš kritický práh bytosti kvůli její přirozené 20."
+              }
+            }
+          },
+          "Fighter": {
+            "ArcaneArcher": {
+              "BeguilingArrow": {
+                "TargetCharmedByAlly": "Použiješ Okouzlující šíp a způsobíš, že bude cíl zmámený postavou {allyName}.",
+                "TargetCharmedByYou": "{actorName} použil/a Okouzlující šíp a způsobil/a, že cíl bude tebou zmámený. Tento efekt skončí, pokud na něj zaútočíš, způsobíš mu zranění, nebo jej donutíš provést záchranný hod."
+              },
+              "GraspingArrow": {
+                "RemoveVinesFail": "Nepodařilo se ti pomocí své akce odstranit z cíle liány.",
+                "RemoveVinesSuccess": "Pomocí své akce byly z cíle úspěšně odstraněny liány."
+              }
+            },
+            "Indomitable": {
+              "AutoSuccess": "{actorName} použil Nezdolnost a automaticky uspěl/a v záchraně.",
+              "Success": "{actorName} použil Nezdolnost a uspěl/a v záchraně.",
+              "Failure": "{actorName} použil Nezdolnost, ale přesto v záchraně neuspěl/a."
+            }
+          },
+          "Interception": {
+            "ReduceDamageTakenBy": "Použiješ {itemProperName} a snížíš zranění, které utrpí {targetName}, o {reduction}."
+          },
+          "Paladin": {
+            "DivineSense": {
+              "Celestials": "Nebešťané",
+              "Fiends": "Běsové",
+              "Found": "Nalezeno",
+              "TotalSensed": "Celkem odhaleno",
+              "Type": "Typ",
+              "Undead": "Nemrtví"
+            }
+          },
+          "Protection": {
+            "AttackHitAnyway": "Použiješ svůj bojový styl 'Zaštítění', ale cíl přesto zasáhne {targetName}.",
+            "FightingStyleCause": "Použiješ svůj bojový styl 'Zaštítění' a způsobíš, že cíl mine {targetName}.",
+            "TurnAdvantageToStraightRollHit": "Použiješ svůj bjový styl 'Zaštítění', abys změnil/a hod s Výhodou na normální hod, ale cíl přesto zasáhne {targetName}.",
+            "TurnAdvantageToStraightRollMiss": "Použiješ svůj bojový styl 'Zaštítění', abys změnil/a hod s Výhodou na normální hod, a způsobíš, že cíl mine {targetName}."
+          },
+          "Ranger": {
+            "MonsterSlayerConclave": {
+              "HuntersSense": {
+                "FollowingDamageTraits": "{targetName} má následující rysy:",
+                "Immunities": "- Imunity:",
+                "Resistances": "- Odolnosti:",
+                "Vulnerabilities": "- Zranitelnosti:"
+              },
+              "MagicUsersNemesis": {
+                "SaveFailed": "Bytost neuspěla v záchraně a byla ovlivněna Nemesis sesilatelů magie.",
+                "SaveSucceeded": "Bytost uspěla v záchraně a nebyla ovlivněna Nemesis sesilatelů magie."
+              }
+            }
+          },
+          "Rogue": {
+            "StrokeOfLuck": {
+              "ChangedAbilityCheck": "Použil/a jsi Štěstí v neštěstí ke změně svého ověření vlastnosti na {newTotal}",
+              "ChangedSkillCheck": "Použil/a jsi Štěstí v neštěstí ke změně svého ověření dovednosti na {newTotal}",
+              "ReactionAvailableSaveTrigger": "{actorName} má k dispozici reakci na záchranu vyvolanou {itemName}."
+            }
+          },
+          "Sorcerer": {
+            "ClockworkSoul": {
+              "RestoreBalance": {
+                "AllyDisadvantageRemovedAttackHit": "Tvému spojenci byl odstraněn zdroj Nevýhody a byl schopen zasáhnout cíl hodem {attackResult}.",
+                "AllyDisadvantageRemovedAttackMiss": "Tvému spojenci byl odstraněn zdroj Nevýhody, ale stále nebyl schopen zasáhnout cíl hodem {attackResult}.",
+                "AllyDisadvantageRemovedCriticalHit": "Tvému spojenci byl odstraněn zdroj Nevýhody a byl schopen zasáhnout cíl kritickým zásahem.",
+                "AllyDisadvantageRemovedCriticalMiss": "Tvému spojenci byl odstraněn zdroj Nevýhody, ale stále nebyl schopen zasáhnout cíl kritickým selháním.",
+                "AllyDisadvantageRemovedSaveFailure": "Tvému spojenci byl odstraněn zdroj Nevýhody, ale stále nebyl schopen uspět v záchraně proti efektu s výsledkem {saveResult}.",
+                "AllyDisadvantageRemovedSaveSuccess": "Tvému spojenci byl odstraněn zdroj Nevýhody a byl schopen uspět v záchraně proti efektu s výsledkem {saveResult}.",
+                "EnemyAdvantageRemovedAttackHit": "Tvému nepříteli byl odstraněn zdroj Výhody, ale stále byl schopen zasáhnout cíl hodem {attackResult}.",
+                "EnemyAdvantageRemovedAttackMiss": "Tvému nepříteli byl odstraněn zdroj Výhody a nebyl schopen zasáhnout cíl hodem {attackResult}.",
+                "EnemyAdvantageRemovedCriticalHit": "Tvému nepříteli byl odstraněn zdroj Výhody, ale stále byl schopen zasáhnout cíl kritickým zásahem.",
+                "EnemyAdvantageRemovedCriticalMiss": "Tvému nepříteli byl odstraněn zdroj Výhody a nebyl schopen zasáhnout cíl kritickým selháním.",
+                "EnemyAdvantageRemovedSaveFailure": "Tvému nepříteli byl odstraněn zdroj Výhody a nebyl schopen uspět v záchraně proti efektu s výsledkem {saveResult}.",
+                "EnemyAdvantageRemovedSaveSuccess": "Tvému nepříteli byl odstraněn zdroj Výhody, ale stále byl schopen uspět v záchraně proti efektu s výsledkem {saveResult}."
+              }
+            }
+          },
+          "Wizard": {
+            "SchoolOfDivination": {
+              "Portent": {
+                "PortentApplied": "Použil/a jsi {portentLabel} a změnil/a výsledek hodu kostkou na {roll}.",
+                "PortentRoll": "- Hod Předzvěsti {i}:"
+              }
+            },
+            "SchoolOfEnchantment": {
+              "InstinctiveCharm": {
+                "OptionAvailableAttackTrigger": "{actorName} má k dispozici možnost při útoku vyvolanou {itemProperName}."
+              }
+            }
+          }
+        },
+        "GenericFeatures": {
+          "OpportunityAttack": {
+            "ReactionAvailableOpportunityAttack": "{actorName} má k dispozici reakci na příležitostný útok."
+          }
+        },
+        "Items": {
+          "Caltrops": {
+            "PiercingDamageTaken": "{actorName} utrpí {damage} bodného zranění."
+          },
+          "RodOfThePactKeeper": {
+            "SpellSlotRecovered": "Pozice kouzla obnovena! Nyní máš zbývající {spellLevelNew} kouzel paktu."
+          },
+          "StaffOfTheRootedHills": {
+            "RestrainedBy": "Bytost je omezena Holí kořenů hor."
+          }
+        },
+        "MonsterFeatures": {
+          "BurstOfIngenuity": {
+            "AddedBonusToRollSaveAlreadySucceeded": "Přidal/a jsi bonus +2 k hodu {allyName}, ale již uspěl/a v záchraně.",
+            "AddedBonusToRollSaveStillFailed": "Přidal/a jsi bonus +2 k hodu {allyName}, ale přesto v záchraně stále selhává.",
+            "AddedBonusToRollSaveSucceeded": "Přidal/a jsi bonus +2 k hodu {allyName} a způsobil/a, že uspěl/a v záchraně."
+          },
+          "DreadCounterspell": {
+            "DreadCounterspellAutoSuccess": "Bytost byla děsivě rozptýlena, protože jsi použil/a {itemProperName} na kouzlo 4. nebo nižšího stupně.",
+            "DreadCounterspellFailed": "Bytost nebyla děsivě rozptýlena, hodil/a jsi {skillTotal} při svém ověření vlastnosti {skillFlavor} a potřeboval/a jsi {spellThreshold}.{spellPenetrationChat}",
+            "DreadCounterspellSuccess": "Bytost byla děsivě rozptýlena, hodil/a jsi {skillTotal} při svém ověření vlastnosti {skillFlavor}."
+          }
+        },
+        "Spells": {
+          "Counterspell": {
+            "CounterspellAutoSuccess": "Bytost byla rozptýlena, protože jsi seslal/a {itemProperName} na stejném nebo vyšším stupni.",
+            "CounterspellFailed": "Bytost nebyla rozptýlena, hodil/a jsi {skillTotal} při svém ověření vlastnosti {skillFlavor}{abjurationChat} a potřeboval/a jsi {spellThreshold}.{spellPenetrationChat}",
+            "CounterspellSuccess": "Bytost byla rozptýlena, hodil/a jsi {skillTotal} při svém ověření vlastnosti {skillFlavor}{abjurationChat}."
+          },
+          "DissonantWhispers": {
+            "TargetAutoSaveSuccess": "Cíl je ohlušený a automaticky uspěje v záchraně."
+          },
+          "Enervation": {
+            "DealDamageHeal": "Způsobíš {damageTotal} bodů výdrže svému cíli a vyléčíš až {healAmount} bodů pomocí Vyčerpání."
+          },
+          "Identify": {
+            "Identify": "Určení {timeToCast}",
+            "PromptRitualCast": "Chceš seslat Určení jako rituál?"
+          },
+          "Infestation": {
+            "MovementRollMovesUsingUp": "Hod na pohyb pro {targetName} je {directionResult}: {targetName} se pohne {directionContent} až o 5 stop (1 sáh) ze svého pohybu. Nevyvolá to příležitostné útoky."
+          },
+          "KineticJaunt": {
+            "EndTurnAnotherCreaturesSpace": "Ukončíš svůj tah v prostoru jiné bytosti a utrpíš {damageTotal} bodů silového zranění a jsi přesunut/a na svou poslední pozici před vstupem do prostoru této bytosti."
+          },
+          "SilveryBarbs": {
+            "AttackFailed": "Bytost byla zasažena Stříbřitými ostny a její útok selhal.",
+            "AttackHitAnyway": "Bytost byla zasažena Stříbřitými ostny, ale přesto zasáhla svůj cíl.",
+            "FailedSaveCheck": "Bytost byla zasažena Stříbřitými ostny a neuspěla ve svém {rollType} pro {itemName}.",
+            "Succeeded": "Bytost byla zasažena Stříbřitými ostny, ale přesto uspěla ve svém {rollType} pro {itemName}."
+          },
+          "StinkingCloud": {
+            "Content": "Dusíš se jedovatým plynem a ztratíš svou akci v tomto tahu kvůli dávení a potácení."
+          },
+          "TemporalShunt": {
+            "ReactionAvailableAttackTrigger": "{actorName} má k dispozici reakci na kouzlo či útok vyvolanou {itemProperName}.",
+            "TargetRollInterrupted": "Hod {workflowType} cíle byl úspěšně přerušen a cíl zmizí."
+          },
+          "Web": {
+            "Escape": "Úspěšně jsi unikl/a z {itemName}!",
+            "UnableEscapeTurn": "V tomto tahu se ti nepodařilo uniknout z {itemName}."
+
+          },
+          "Confusion": {
+            "ActNormally": "Bytost může jednat a pohybovat se normálně.",
+            "MovementRoll": "Tvůj hod na pohyb je {rollResult} a pohneš se {direction}: V tomto tahu neprovedeš akci.",
+            "NoMoveOrActions": "V tomto tahu se nemůžeš pohybovat ani provádět akce.",
+            "RollForIs": "Hod na Zmatek pro {actorName} je {result}:",
+            "MustMoveAndMeleeAttack": "Musíš se přesunout k aktérovi {targetName} a zaútočit na něj útokem na blízko.",
+            "NoAction": "Bytost v tomto tahu nic nedělá."
+          },
+          "BlackTentacles": {
+            "EscapeFailed": "V tomto tahu se ti nepodařilo uniknout z Černých chapadel.",
+            "EscapeSucceeded": "Úspěšně jsi unikl/a z Černých chapadel!"
+          },
+          "Command": {
+            "MustNow": "{actorName} nyní musí {wordInput}."
+          }
+        }
+      },
+      "Automations2024": {
+        "GenericFeatures": {
+          "MageSlayer2024": {
+            "SaveSucceeded": "{actorName} použil/a {itemProperName} a uspěl/a ve své záchraně."
+          }
+        },
+        "Spells": {
+          "Counterspell2024": {
+            "CounterspellFailed": "Bytost uspěla v záchraně a nebyla rozptýlena.",
+            "CounterspellSuccess": "Bytost neuspěla v záchraně a byla rozptýlena."
+          },
+          "StinkingCloud2024": {
+            "Content": "Dusíš se jedovatým plynem a ztratíš svou akci i bonusovou akci v tomto tahu dávením a potácením."
+          }
+        }
+      },
+      "Utils": {
+        "Helpers": {
+          "CastRitually": "{actorName} seslal/a {itemName} jako rituál.",
+          "Per": "za {restModeName}",
+          "Remaining": "Zbývá ti {remaining} použití.",
+          "UsesRemaining": "Zbývá ti {remaining} použití."
+        }
+      }
+    },
+    "DAE": {
+      "Flags": {
+        "OADisadvantage": {
+          "Description": "Zajištění Nevýhody při příležitostném útoku proti tomuto tokenu",
+          "Name": "Nevýhoda při příležitostném útoku"
+        },
+        "OADisadvantageSource": {
+          "Description": "Nevýhoda při příležitostném útoku proti tokenu",
+          "Name": "Zdroj Nevýhody při příležitostném útoku"
+        },
+        "OAImmunity": {
+          "Description": "Znemožnění jakéhokoliv příležitostného útoku proti tokenu",
+          "Name": "Imunita vůči příležitostnému útoku"
+        },
+        "OASuppression": {
+          "Description": "Znemožnění tokenu provádět jakékoli příležitostné útoky",
+          "Name": "Potlačení příležitostných útoků"
+        }
+      }
+    },
+    "Debug": {
+      "Automations": {
+        "Spells": {
+          "Confusion": {
+            "EffectNotFound": "Efekt Zmatku nebyl u aktéra nalezen."
+          }
+        }
+      }
+    },
+    "Dialogs": {
+      "Common": {
+        "Advantage": "Výhoda:",
+        "Cast": "Seslat",
+        "Close": "Zavřít",
+        "Daily": "Denně",
+        "DamageLabel": "Zranění:",
+        "EnemyHitsAlly": "Nepřítel úspěšně zasáhl tvého spojence.",
+        "EnemyHitsAllyWithAttackTotal": "Nepřítel úspěšně zasáhl tvého spojence hodem {attackTotal}.",
+        "FavoriteThisOption": "Označit tuto možnost jako oblíbenou?",
+        "FreeUse": "Bezplatné použití {itemName}",
+        "LongRest": "Důkladný odpočinek",
+        "No": "Ne",
+        "NoValidAlliesInRange": "Žádní platní spojenci v dosahu.",
+        "NoValidEnemiesInRange": "Žádní platní nepřátelé v dosahu.",
+        "Pause": "Pozastavit",
+        "PointsAbbrev": "b.",
+        "PromptAutoSaveSuccess": "Chceš využít {itemProperName} k úspěchu v záchraně?",
+        "PromptRerollSave": "Chceš využít {itemProperName} k přehození své záchrany?",
+        "Resume": "Pokračovat",
+        "ShortRest": "Krátký odpočinek",
+        "Target": "Cíl:",
+        "WaitingForSelection": "Čeká se na výběr {actorName} | {itemName}",
+        "Weapon": "Zbraň:",
+        "Yes": "Ano"
+      },
+      "Automations": {
+        "ThirdPartyClassFeatures": {
+          "Savant": {
+            "CalculatedFlourish": {
+              "Prompts": {
+                "UseYourReaction": {
+                  "Default": "Chceš využít svou reakci k útoku? Tím použiješ svou Kostku převahy pro manévr Riposta. Níže zvol svou zbraň."
+                }
+              }
+            }
+          },
+          "Witch": {
+            "CovenOfTheRoilingHearth": {
+              "RainOfCinders": {
+                "AttackedInitiate": "{targetName} byl napaden, chceš vyvolat {itemProperName} a využít ducha krbu k pokusu o jeho narušení?"
+              }
+            },
+            "WitchesHex": {
+              "Prompts": {
+                "UseYourReaction": {
+                  "ReduceAttack": "Chceš využít svou reakci k vyvolání {itemName} a pokusit se snížit hod na útok nepřítele?",
+                  "ReduceSave": "Chceš využít svou reakci k vyvolání {itemName} a pokusit se snížit záchranu nepřítele? Níže vyber nepřítele jako cíl."
+                }
+              }
+            }
+          },
+          "Wizard": {
+            "Chronurgist": {
+              "ChronalShift": {
+                "AllyTarget": "Cíl je spojenec:",
+                "Details": {
+                  "AlliesFailed": "Spojenci neuspěli ve svých záchranách. Níže vyber spojence k přehození.",
+                  "EnemiesSucceeded": "Nepřátelé uspěli ve svých záchranách. Níže vyber nepřítele k přehození.",
+                  "EnemiesSucceededAlliesFailed": "Nepřátelé uspěli a spojenci neuspěli ve svých záchranách. Níže vyber nepřítele či spojence k přehození. Pokud vybereš oba, přehození se použije na nepřítele."
+                },
+                "EnemyTarget": "Cíl je nepřítel:",
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Initiate": "Chceš využít svou reakci k vyvolání {itemName}? {details}"
+                  }
+                },
+                "SelectAlly": "-- Vyber spojence --",
+                "SelectEnemy": "-- Vyber nepřítele --"
+              }
+            }
+          }
+        },
+        "ThirdPartySpells": {
+          "GrimSiphon": {
+            "Heal": "Léčit",
+            "HealLabel": "Léčení:",
+            "SelectHealingTarget": "Koho chceš léčit?",
+            "Windowtitle": "Léčení Ponurým vysátím"
+          },
+          "PowerWordRebound": {
+            "HitByAttack": "{targetName} byl zasažen útokem a má méně než polovinu BV, chceš využít {itemProperName} k jeho odražení?"
+          },
+          "StormMote": {
+            "AssignMotes": "Přiřaď {numMotes} jisker, které máš k dispozici:",
+            "Cancel": "Zrušit",
+            "Confirm": "Potvrdit",
+            "Windowtitle": "Přiřadit jiskry"
+          }
+        },
+        "ClassFeatures": {
+          "Artificer": {
+            "FlashOfGenius": {
+              "For": "pro {targetName}?",
+              "ForYourself": "pro sebe?",
+              "Prompts": {
+                "UseYourReaction": {
+                  "Default": "Chceš využít svou reakci k vyvolání {itemName} {targetPrompt}"
+                }
+              },
+              "TargetPrompt": {
+                "ChooseAlly": "pro spojence? Vyber níže.",
+                "ChooseSelfOrAlly": "pro sebe či spojence? Vyber níže."
+
+              }
+            }
+          },
+          "Bard": {
+            "CollegeOfLore": {
+              "CuttingWords": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "Chceš využít svou reakci k vyvolání {itemName} pro tento hod {rollType}?",
+                    "WithDetails": "{details} Chceš využít svou reakci k použití {itemName} pro tento hod {rollType}?"
+                  }
+                },
+                "Pts": "- {points} b.",
+                "TargetRolledAttack": "Cíl hodil {attackTotal} na útok. "
+              }
+            },
+            "CollegeOfTragedy": {
+              "PoetryInMisery": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "Chceš využít svou reakci k vyvolání {itemName} pro tuto přirozenou jedničku {rollType}?"
+                  }
+                }
+              },
+              "TaleOfHubris": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "Chceš využít svou reakci k vyvolání {itemName} ro tuto přirozenou dvacítku {rollType}?"
+                  }
+                }
+              }
+            }
+          },
+          "Druid": {
+            "CircleOfStars": {
+              "StarMap": {
+                "Prompt": "Chceš využít Kruh hvězd k vyvolání bezplatného použití {itemName}? Bude sesláno na svém základním stupni. Zbývá ti {freeUses} použití."
+              }
+            }
+          },
+          "Fighter": {
+            "ArcaneArcher": {
+              "BeguilingArrow": {
+                "SelectAllyForCharm": "Vyber, kterým spojencem má být cíl zmámen:"
+              }
+            },
+            "BattleMaster": {
+              "Riposte": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "Chceš využít svou reakci k útoku? Tím vyvoláš použití své Kostky převahy pro manévr Riposta. Níže zvol svou zbraň."
+                  }
+                }
+              }
+            }
+          },
+          "Interception": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci k vyvoláš {itemName} pro tento hod {rollType}?"
+              }
+            },
+            "PtsOf": "{points} b. z"
+          },
+          "Protection": {
+            "Prompt": "Chceš využít",
+            "ToDisadvantageTheAttackAgainst": "k udělení Nevýhody na útok proti"
+          },
+          "Ranger": {
+            "MonsterSlayerConclave": {
+              "MagicUsersNemesis": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "Chceš využít svou reakci k vyvolání {itemName}?"
+
+                  }
+                }
+              }
+            }
+          },
+          "Rogue": {
+            "StrokeOfLuck": {
+              "Prompt": "Chceš využít Štěstí v neštěstí ke změně svého ověření vlastnosti na 20?",
+              "VeMissedAttack": "Tvůj útok minul, chceš místo toho využít Štěstí v neštěstí a zasáhnout?"
+            }
+          },
+          "Sorcerer": {
+            "ClockworkSoul": {
+              "RestoreBalance": {
+                "Ally": "Spojenec:",
+                "Enemy": "Nepřítel:",
+                "OnchangeResetallyselect": "onchange=\"resetAllySelect()\">",
+                "OnchangeResetenemyselect": "onchange=\"resetEnemySelect()\">",
+                "Prompts": {
+                  "UseYourReaction": {
+                    "SelectTarget": "Chceš využít svou reakci k vyvolání {itemName}? {selectionHint}",
+                    "TargetDisposition": "Chceš využít svou reakci k vyvolání {itemName} {targetHint}"
+                  }
+                },
+                "SelectAlly": "Vyber spojence:",
+                "SelectEnemy": "Vyber nepřítele:",
+                "SelectionHint": {
+                  "ChooseAlly": "Níže vyber spojence, kterému odstraníš Nevýhodu.",
+                  "ChooseAllyOrEnemy": "Níže vyber spojence, kterému odstraníš Nevýhodu, nebo nepřítele, kterému odstraníš Výhodu.",
+                  "ChooseEnemy": "Níže vyber nepřítele, kterému odstraníš Výhodu."
+                },
+                "TargetHint": {
+                  "RemoveAdvantageFromEnemy": "k odstranění Výhody nepříteli?",
+                  "RemoveDisadvantageFromAlly": "k odstranění Nevýhody spojenci?"
+                }
+              }
+            }
+          },
+          "Warlock": {
+            "GreatOldOne": {
+              "EntropicWard": {
+                "Prompts": {
+                  "UseYourReaction": {
+                    "Default": "Chceš využít svou reakci k udělení Nevýhody na útok proti tobě, nebo získat Výhodu proti útočníkovi?"
+                  }
+                }
+              }
+            },
+            "Hexblade": {
+              "ArmorOfHexes": {
+                "Prompt": "Chceš využít Zbroj kleteb a pokusit se vyhnout tomuto útoku?"
+              }
+            }
+          },
+          "Wizard": {
+            "SchoolOfDivination": {
+              "Portent": {
+                "SelectPortentRoll": "Který hod Předzvěsti chceš využít?",
+                "Windowtitle": "Výběr hodu Předzvěsti"
+              }
+            },
+            "SchoolOfEnchantment": {
+              "InstinctiveCharm": {
+                "ForcedSelectNew": "{itemProperName} tě donutil vybrat nový cíl svého útoku. Vyber ze seznamu níže.",
+                "Prompt": "Chceš využít {itemProperName} a pokusit se přinutit útočníka vybrat jiný cíl?"
+              }
+            }
+          },
+          "Barbarian": {
+            "RecklessAttack": {
+              "Prompts": {
+                "UseRecklessAttack": "Chceš v tomto tahu využít svůj Bezhlavý útok?"
+              }
+            }
+          }
+        },
+        "GenericFeatures": {
+          "GiftOfTheGemDragon": {
+            "Charisma": "Charisma",
+            "Damaged": "Utrpěl/a jsi zranění, chceš využít svou reakci k vyvolání",
+            "Intelligence": "Inteligence",
+            "PromptDamageAndPush": "ke způsobení zranění a případnému odtlačení útočníka?",
+            "SelectAbilityScore": "Kterou vlastnost jsi zvýšil/a pomocí Daru drahokamového draka?",
+            "TelekineticReprisal": "Telekinetická odplata",
+            "Windowtitle": "Vlastnost Daru drahokamového draka",
+            "Wisdom": "Moudrost"
+          },
+          "MageSlayer": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci na útok pomocí Zabijáka mágů? Níže zvol svou zbraň."
+
+              }
+            }
+          },
+          "OpportunityAttack": {
+            "BraceHint": " Tím vyvoláš použití své Kostky převahy pro manévr Vyztužení.",
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci k útoku?{warCasterHint}{braceHint}"
+              }
+            },
+            "Title": "Příležitostný útok",
+            "TitleBrace": "Manévry: Příležitostný útok – Vyztužení",
+            "TitleDeadlyReach": "Příležitostný útok – Smrtící dosah",
+            "TitlePolearm": "Příležitostný útok – Ratiště",
+            "WarCasterHint": " Pokud používáš Válečného sesilatele k seslání kouzla, musí ovlivnit pouze bytost, která vyvolala tento příležitostný útok."
+          },
+          "Sentinel": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci k útoku pomocí Strážce? Níže zvol svou zbraň."
+              }
+            }
+          }
+        },
+        "Items": {
+          "AmuletOfTheDevout": {
+            "Prompt": "Chceš obnovit jedno použití Božské přízně?"
+          },
+          "BallBearings": {
+            "ConfirmHalfSpeed": "{actorName} prošel přes kuličky, pohybuje se poloviční rychlostí?"
+          },
+          "BootsOfSpeed": {
+            "Prompt": "Chceš deaktivovat Boty rychlosti?",
+            "Windowtitle": "Boty rychlosti"
+          },
+          "Caltrops": {
+            "ConfirmHalfSpeed": "{actorName} prošel přes ježky, pohybuje se poloviční rychlostí?"
+          },
+          "RodOfThePactKeeper": {
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "Chceš využít svou akci k obnovení pozice kouzla?"
+              }
+            }
+          },
+          "StaffOfWithering": {
+            "Prompt": "Chceš využít jedno nabití ke způsobení dodatečného zranění a případně udělit cíli Nevýhodu? Máš",
+            "Remaining": "{chargesText} zbývá."
+          }
+        },
+        "MonsterFeatures": {
+          "BurstOfIngenuity": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci k seslání {itemName} a přidat 2 k této záchraně? Níže vyber spojence."
+              }
+            }
+          },
+          "DreadCounterspell": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci k vyvolání {itemName}?"
+              }
+            }
+          },
+          "LegendaryResistance": {
+            "PromptUseLegendaryResistance": "{actorName} selhal/a v záchraně. Chceš využít {itemName} a změnit to na úspěch?"
+          }
+        },
+        "Spells": {
+          "BlackTentacles": {
+            "Dexterity": "Obratnost",
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "Chceš využít svou akci k ověření vlastnosti pro únik z Černých chapadel?"
+              }
+            },
+            "Strength": "Síla"
+          },
+          "Counterspell": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci k {itemName}?"
+              }
+            },
+            "SubtleSpellRemaining": "využít Záludné kouzlo? | {pointsRemaining} {pointsLabel} Zbývá"
+          },
+          "Enervation": {
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "Chceš v tomto kole využít svou akci ke způsobení 4k8 nekrotického zranění svému cíli pomocí Vyčerpání?"
+              }
+            }
+          },
+          "Entangle": {
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "Chceš využít svou akci k ověření Síly pro únik ze spoutání?"
+              }
+            }
+          },
+          "FizbansPlatinumShield": {
+            "PromptSelectTarget": "Na koho chceš přesunout Fizbanův platinový štít?"
+          },
+          "FortunesFavor": {
+            "PromptRerollAttackRoll": "Použij {itemName} k přehození k20 při hodu na útok:",
+            "ReplaceRoll": "Nahradit {oldRoll} za {newRoll}?"
+          },
+          "HellishRebuke": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci k vyvolání Pekelné odplaty na bytost, která ti způsobila zranění?"
+              }
+            }
+          },
+          "Identify": {
+            "Level": "{levelWithOrdinal} stupeň ({spellSlot})",
+            "WindowTitle": "Určení předmětu",
+            "WindowTitleRitual": "Určení předmětu jako rituál",
+            "Windowtitle": "Typ seslání Určení"
+          },
+          "PowerWordHeal": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci na zvednutí se?"
+              }
+            }
+          },
+          "SilveryBarbs": {
+            "Prompts": {
+              "UseYourReaction": {
+                "AfterAttack": "Chceš využít svou reakci k seslání {itemName}? {triggerDetails} Níže vyber spojence, kterému udělíš Výhodu.",
+                "AfterSave": {
+                  "Multiple": "Chceš využít svou reakci k seslání {itemName}? Nepřátelé uspěli ve své záchraně. Níže vyber nepřítele jako cíl a spojence, kterému udělíš Výhodu.",
+                  "Single": "Chceš využít svou reakci k seslání {itemName}? Nepřítel uspěl ve své záchraně. Níže vyber nepřítele jako cíl a spojence, kterému udělíš Výhodu."
+                }
+              }
+            }
+          },
+          "TemporalShunt": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci k použití {itemName}?"
+              }
+            },
+            "SelectAdditionalTargets": "Jaké další cíle chceš ovlivnit pomocí {itemProperName}? Níže můžeš vybrat až {numTargets} dalších {targetWord}."
+          },
+          "ViciousMockery": {
+            "WhatDoYouSay": "Co řekneš?",
+            "Windowtitle": "🗣Zlomyslný výsměch😜️"
+          },
+          "Web": {
+            "Prompts": {
+              "UseYourAction": {
+                "AthleticsCheck": "Chceš využít svou akci k ověření Atletiky pro únik z {itemName}?",
+                "StrengthCheck": "Chceš využít svou akci k ověření Síly pro únik z {itemName}?"
+              }
+            }
+          },
+          "ZephyrStrike": {
+            "Prompt": "Chceš využít Zefýrův úder k udělení Výhody na tento útok a zvýšení své rychlosti do konce tohoto tahu?",
+            "Windowtitle": "Zefýrův úder"
+          },
+          "Command": {
+            "WindowTitle": "🗣Rozkaz🗣",
+            "Prompts": {
+              "SelectCommand": "Jaký příkaz chceš vydat?"
+            }
+          }
+        }
+      },
+      "Automations2024": {
+        "ClassFeatures": {
+          "Sorcerer": {
+            "DraconicSorcery": {
+              "ElementalAffinity2024": {
+                "SelectEnemyForBonusDamage": "Níže vyber nepřítele, který obdrží dodatečné {damageType} zranění z tvé Elementální přízně:"
+              }
+            }
+          }
+        },
+        "GenericFeatures": {
+          "Sentinel2024": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci k útoku pomocí Ochránce? Níže zvol svou zbraň."
+              }
+            }
+          },
+          "ShieldMaster2024": {
+            "Prompt": "Chceš využít Útok štítem a přinutit cíl k záchraně, aby mohl být případně odtlačen ({pushRangeText}) či sražen k zemi?",
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci k možnému neutrpění žádného zranění po úspěšné záchraně pomocí Zastavení útoku štítem?"
+              }
+            },
+            "Prone": "Sražení k zemi",
+            "Push": "Odtlačení"
+          }
+        },
+        "RaceFeatures": {
+          "FiresBurn2024": {
+            "Prompt": "Chceš způsobit dodatečné zranění pomocí {itemName}?"
+          },
+          "FrostsChill2024": {
+            "Prompt": "Chceš způsobit dodatečné zranění a snížit rychlost bytosti pomocí {itemName}?"
+          },
+          "HillsTumble2024": {
+            "Prompt": "Chceš srazit bytost na zem pomocí {itemName}?"
+          },
+          "StormsThunder2024": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci na zranění bytosti, která tě zranila, pomocí {itemName}?"              }
+            }
+          }
+        },
+        "Spells": {
+          "BlackTentacles2024": {
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "Chceš využít svou akci na ověření Atletiky pro únik z Černých chapadel?"
+              }
+            }
+          },
+          "Command2024": {
+            "Approach": "Přibliž se",
+            "Drop": "Upusť",
+            "Flee": "Uteč",
+            "Grovel": "Plaz se",
+            "Halt": "Stůj"
+          },
+          "Counterspell2024": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci na {itemName}?"
+              }
+            }
+          },
+          "Entangle2024": {
+            "Prompts": {
+              "UseYourAction": {
+                "Default": "Chceš využít svou akci na ověření Atletiky pro únik ze spoutání?"
+              }
+            }
+          },
+          "PowerWordHeal2024": {
+            "Prompts": {
+              "UseYourReaction": {
+                "Default": "Chceš využít svou reakci a zvednout se?"
+              }
+            }
+          }
+        }
+      },
+      "Utils": {
+        "Helpers": {
+          "PromptFreeUse": "Chceš aktivovat volné použití {itemName}? Bude sesláno na svém základním stupni. {remainingText}",
+          "PromptRitualCast": "Chceš seslat {itemName} jako rituál? Tím se jeho doba sesílání ({activationCost} {activationType}) prodlouží o 10 minut.",
+          "RitualUse": "Rituální použití {itemName}",
+          "ThisGrantsOneFreeUse": "Toto uděluje jedno volné použití {restModeText}."
+        },
+        "LightActions": {
+          "Dim": "Ztlumit",
+          "Extinguish": "Uhasit",
+          "Light": "Rozsvítit",
+          "PromptAction": "Co chceš udělat se svým {dialogTitle}?",
+          "Throw": "Hodit"
+        }
+      }
+    },
+    "Directions": {
+      "East": "Východ",
+      "North": "Sever",
+      "Northeast": "Severovýchod",
+      "Northwest": "Severozápad",
+      "South": "Jih",
+      "Southeast": "Jihovýchod",
+      "Southwest": "Jihozápad",
+      "West": "Západ"
+    },
+    "Effects": {
+      "Utils": {
+        "Helpers": {
+          "LongRestChargeUsed": "{itemName}: Použití obnoveno po důkladném odpočinku"
+
+        }
+      }
+    },
+    "Menus": {
+      "ClassFeatures": {
+        "Hint": "Bědná poezie, Ochrana, Slovní výpad atd.",
+        "Label": "Povolit schopnosti povolání",
+        "Name": "Schopnosti povolání"
+      },
+      "GeneralSettings": {
+        "Hint": "Zrcadlení dialogu, omezení Určení atd.",
+        "Label": "Obecná nastavení",
+        "Name": "Obecná nastavení"
+      },
+      "GenericFeatures": {
+        "Hint": "Příležitostný útok, Strážce atd.",
+        "Label": "Povolit odbornosti",
+        "Name": "Odbornosti"
+      },
+      "MonsterFeatures": {
+        "Hint": "Schopnosti nestvůr.",
+        "Label": "Povolit schopnosti nestvůr",
+        "Name": "Schopnosti nestvůr"
+      },
+      "PatreonSupport": {
+        "Hint": "Pokud mě chceš podpořit, jsem Gambit! Odběr pomáhá s vývojem tohoto i dalších mých bezplatných modulů a zároveň ti poskytne přístup k mým prémiovým modulům Gambit's FXMaster+, Gambit's Asset Previewer a Gambit's Image Viewer!",
+        "Label": "Gambit's Lounge",
+        "Name": "Podpora na Patreonu"
+      },
+      "Spells": {
+        "Hint": "Protikouzlo, Stříbřité ostny atd.",
+        "Label": "Povolit kouzla",
+        "Name": "Kouzla"
+      }
+    },
+    "Notifications": {
+      "ThirdPartyClassFeatures": {
+        "Witch": {
+          "WitchesHex": {
+            "MustScale": "Tento aktér musí mít Čarodějnickou škálu s názvem 'kp-witch'"
+          }
+        }
+      },
+      "Common": {
+        "RequiresActiveCombat": "{effectName} vyžaduje aktivní boj.",
+        "ThisEffect": "Tento efekt"
+      },
+      "Automations2024": {
+        "Spells": {
+          "CloudOfDaggers2024": {
+            "MoveFeatureItemCreated": "Schopnost \"{name} - pohyb\" byla vytvořena. Používej tuto položku k pohybu svým {name} dle potřeby."
+          },
+          "PowerWordStun2024": {
+            "TargetMoreThan150": "Cíl má více než 150 BV a není omráčený, ale jeho rychlost je do začátku dalšího tahu sesilatele snížena na 0."
+          },
+          "Sleep2024": {
+            "TargetImmuneToSleepOrExhaustion": "Bytost je imunní vůči magickému spánku a/nebo nemůže být vyčerpaná."
+          }
+        }
+      },
+      "ClassFeatures": {
+        "Bard": {
+          "CollegeOfLore": {
+            "CuttingWords": {
+              "MissingBardicInspirationScale": "Tento aktér musí mít Bardskou či Ambasadorskou škálu s názvem 'bardic-inspiration' či 'inspiration'"
+            }
+          }
+        },
+        "Druid": {
+          "CircleOfStars": {
+            "StarMap": {
+              "NoSpellSlotConsumed": "Použil/a jsi Kruh hvězd k vyvolání {name} a nepoužil/a jsi pozici kouzla"
+            }
+          }
+        },
+        "Fighter": {
+          "ArcaneArcher": {
+            "GraspingArrow": {
+              "MissingDependency": "Aby mohla být tato automatizace využívána, musíš nainstalovat modul Jinkers Animated Art Pack."
+            }
+          }
+        },
+        "Paladin": {
+          "OathOfConquest": {
+            "ScornfulRebuke": {
+              "Incapacitated": "{name} je zneschopněný/á, Pohrdavé odvrácení selže."
+            }
+          }
+        },
+        "Ranger": {
+          "MonsterSlayerConclave": {
+            "HuntersSense": {
+              "TargetSingleCreature": "Lovcovy smysly: Zaměř, prosím, pouze 1 bytost a zkus to znovu."
+            }
+          }
+        },
+        "Wizard": {
+          "SchoolOfEnchantment": {
+            "InstinctiveCharm": {
+              "CharmImmunity": "Bytost není ovlivněna, protože má imunitu vůči zmámení"
+            }
+          }
+        }
+      },
+      "GenericFeatures": {
+        "OpportunityAttack": {
+          "NoValidOptions": "Nenalezeny žádné platné možnosti útoku na blízko, ruším možnosti příležitostného útoku pro {name}"
+
+        }
+      },
+      "Helpers": {
+        "CanOnlySelectUp": "Můžeš vybrat nejvýše {numTargets} cílů.",
+        "CastOptionNoSlotConsumed": "Využila jsi možnost seslání za {restModeName} k vyvolání {name} a nepoužil/a jsi pozici kouzla. Kouzlo bylo sesláno na svém základním stupni."
+      },
+      "Hooks": {
+        "Msg": "{message}"
+      },
+      "Items": {
+        "AmuletOfTheDevout": {
+          "NoAmuletCharges": "Nemáš žádná nabití Amuletu zbožných k použití.",
+          "NoChannelDivinityCharges": "Nemáš žádná použití Božské přízně k obnovení.",
+          "Recovered": "Použití Božské přízně obnoveno!"
+        },
+        "Candle": {
+          "DoNotAnyS": "Nemáš žádné zbývající {animType}s.",
+          "MissingDependency": "Modul Active Token Effects musí být aktivní"
+        },
+        "Matalotok": {
+          "TargetAtLeastOneToken": "Zaměř, prosím, alespoň jeden token."
+        },
+        "RodOfThePactKeeper": {
+          "NotAvailable": "Nemáš žádnou vhodnou pozici kouzla k obnovení"
+        },
+        "StaffOfWithering": {
+          "NotAvailable": "Nemáš žádná zbývající použití Berly chřadnutí"
+        },
+        "Torch": {
+          "DoNotAnyEs": "Nemáš žádné zbývající {animType}es."
+        }
+      },
+      "Spells": {
+        "DimensionDoor": {
+          "CanOnlySelectOne": "Můžeš ke společné teleportaci vybrat pouze jednu bytost",
+          "MissingDependency": "Aby tato automatizace mohla být používána, musíš nainstalovat modul Jack Kerouac's Animated Spell Effects - Cartoon.",
+          "MustBeWithin5Feet": "Musíš být do 5 stop (1 sáh) od spojence, kterého se snažíš teleportovat",
+          "TooLarge": "Tvůj cíl je příliš velký, aby se s tebou teleportoval"
+        },
+        "EnemiesAbound": {
+          "TargetImmuneCannotBeFrightened": "{name} je imunní vůči Obklíčení, protože nemůže být vystrašen."
+        },
+        "HideousLaughter": {
+          "TargetNotAffectedIntTooLow": "Tato bytost není ovlivněna; její Inteligence je příliš nízká."
+        },
+        "Identify": {
+          "Identified": "Určeno: {name}",
+          "NoSpellSlots": "Nemáš k dispozici žádné pozice kouzel",
+          "NoUnidentifiedItems": "Nemáš žádné neidentifikované předměty",
+          "RitualOnly": "Seslání jako rituál: Určení můžeš seslat pouze jako rituál."
+        },
+        "IntellectFortress": {
+          "SelectedMoreTokensThan": "Vybral/a jsi více tokenů, než dovoluje stupeň kouzla, vyber tokeny znovu.",
+          "TargetsNotWithinRange": "Vybraný token není do 30 stop (6 sáhů) od jiného tokenu, který jsi vybral/a. Vyber tokeny znovu.",
+          "UnableSee": "Vybraný token nevidíš, vyber tokeny znovu."
+        },
+        "MentalPrison": {
+          "TargetsImmune": "Cíle jsou imunní vůči zmámení"
+        },
+        "PowerWordHeal": {
+          "TargetUndead": "Cíl je nemrtvý či konstrukt a není ovlivněn"
+        },
+        "PowerWordPain": {
+          "TargetMoreThan100": "Cíl má více než 100 BV, nebo je imunní vůči zmámení.",
+          "UnableSave": "Nedokázal/a jsi uspět v záchraně, tvé kouzlo selže a je promarněno."
+        },
+        "PowerWordStun": {
+          "TargetMoreThan150": "Cíl má více než 150 BV."
+        },
+        "ViciousMockery": {
+          "TargetCannotHearYou": "Bytost není ovlivněna, protože tě nemůže slyšet."
+
+        }
+      }
+    },
+    "Settings": {
+      "BurstOfIngenuityTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Záblesku geniality"
+      },
+      "ChronalShiftTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Chronálního posunu"
+      },
+      "CounterspellTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Protikouzla"
+      },
+      "CuttingWordsTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 30 sekund.",
+        "Name": "Časový limit Slovního výpadu"
+      },
+      "EnableCounterspell": {
+        "Hint": "Po zaškrtnutí se uživatelům s Protikouzlem bude zobrazovat odpovídající dialog a při použití se automatizuje jeho vyhodnocení.",
+        "Name": "Povolit Protikouzlo?"
+      },
+      "EnableCuttingWords": {
+        "Hint": "Po zaškrtnutí se uživatelům se Slovním výpadem bude zobrazovat odpovídající dialog a při použití se automatizuje jeho vyhodnocení.",
+        "Name": "Povolit Slovní výpad?"
+      },
+      "EnableIdentifyRestrictions": {
+        "Hint": "Po zaškrtnutí bude hráčským postavám bráněno identifikovat neidentifikované předměty jinak než pomocí mé automatizace kouzla Určení.",
+        "Name": "Povolit omezení Určení?"
+      },
+      "EnableIndomitable": {
+        "Hint": "",
+        "Name": "Povolit Nezdolnost?"
+      },
+      "EnableInterception": {
+        "Hint": "Po zaškrtnutí se uživatelům s Ochranou bude zobrazovat odpovídající dialog a při použití se automatizuje její vyhodnocení.",
+        "Name": "Povolit Ochranu?"
+      },
+      "EnableOpportunityAttack": {
+        "Hint": "Po zaškrtnutí se na začátku boje vhodným účastníkům automaticky přidá položka 'Příležitistný útok' a na konci boje bude odebrána.",
+        "Name": "Povolit příležitistný útok?"
+      },
+      "EnablePoetryInMisery": {
+        "Hint": "Po zaškrtnutí se uživatelům s Bědnou poezií bude zobrazovat odpovídající dialog a při použití se automatizuje její vyhodnocení.",
+        "Name": "Povolit Bědnou poezii?"
+      },
+      "EnablePowerWordRebound": {
+        "Hint": "Pokud je povoleno, zobrazí uživatelům s kouzlem Slovo moci 'Odraz' odpovídající dialog a při použití se automatizuje jeho vyhodnocení.",
+        "Name": "Povolit Slovo moci 'Odraz'?"
+      },
+      "EnableProtection": {
+        "Hint": "",
+        "Name": "Povolit Zaštítění"
+      },
+      "EnableRiposte": {
+        "Hint": "",
+        "Name": "Povolit Ripostu"
+      },
+      "EnableSentinel": {
+        "Hint": "",
+        "Name": "Povolit Ochránce"
+      },
+      "EnableSilveryBarbs": {
+        "Hint": "Po zaškrtnutí se uživatelům se Stříbřitými ostny bude zobrazovat odpovídající dialog a při použití se automatizuje jejich vyhodnocení.",
+        "Name": "Povolit Stříbřité ostny?"
+      },
+      "EnableWitchesHex": {
+        "Hint": "Po zaškrtnutí se uživatelům se schopností Čarodějnická kletba bude zobrazovat odpovídající dialog a při použití se automatizuje její vyhodnocení.",
+        "Name": "Povolit Čarodějnickou kletbu?"
+      },
+      "FlashOfGeniusTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Záblesků geniality"
+      },
+      "IdentifyRestrictionMessage": {
+        "Hint": "Toto je zpráva, která se zobrazí uživatelům, pokud jsou omezeni.",
+        "Name": "Zpráva omezení Určení"
+      },
+      "IndomitableTimeout": {
+        "Hint": "",
+        "Name": "Časový limit Nezdolnosti"
+      },
+      "InstinctiveCharmTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Instinktivního zmámení"
+      },
+      "InterceptionTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 30 sekund.",
+        "Name": "Časový limit Ochrany"
+      },
+      "LegendaryResistanceTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Legendárního odolání"
+      },
+      "MageSlayerTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Zabijáka mágů"
+      },
+      "MirrorThirdPartyDialogForGMs": {
+        "Hint": "Po zaškrtnutí budou dialogy třetích stran odeslány hráčům i PJ. Obě strany mohou s dialogem interagovat a využít/odmítnout/pozastavit jej.",
+        "Name": "Zrcadlit dialogy třetích stran pro PJ?"
+      },
+      "OpportunityAttackTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit příležitostného útoku"
+      },
+      "PoetryInMiseryTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Bědné poezie"
+      },
+      "PowerWordReboundTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 30 sekund.",
+        "Name": "Časový limit Slova moci 'Odraz'"
+      },
+      "ProtectionTimeout": {
+        "Hint": "",
+        "Name": "Časový limit Zaštítění"
+      },
+      "RainOfCindersTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Déšť popele"
+      },
+      "RestoreBalanceTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Obnovení rovnováhy"
+      },
+      "RiposteTimeout": {
+        "Hint": "",
+        "Name": "Časový limit Riposty"
+      },
+      "SentinelTimeout": {
+        "Hint": "",
+        "Name": "Časový limit Strážce"
+      },
+      "SilveryBarbsTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 30 sekund.",
+        "Name": "Časový limit Stříbřitých ostnů"
+      },
+      "TaleOfHubrisTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Příběhu o pýše"
+      },
+      "TemporalShuntTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 15 sekund.",
+        "Name": "Časový limit Časového odklonu"
+      },
+      "WitchesHexTimeout": {
+        "Hint": "Zadej vlastní hodnotu (v sekundách). Výchozí hodnota časového limitu je 30 sekund.",
+        "Name": "Časový limit Čarodějnické kletby"
+      },
+      "DebugEnabled": {
+        "Hint": "Po zaškrtnutí se budou do konzole vypisovat záznamy validace procesu reakcí pro účely řešení problémů.",
+        "Name": "Povolit ladění?"
+      },
+      "Enable3prNoCombat": {
+        "Hint": "Po zaškrtnutí budou reakce třetích stran fungovat i mimo aktivní boj.",
+        "Name": "Povolit reakce třetích stran mimo boj?"
+      },
+      "EnableTimerFullAnim": {
+        "Hint": "Po zaškrtnutí bude animace odpočtu dialogu pokrývat celý titulkový pruh místo pouze jeho okraje.",
+        "Name": "Povolit plnou animaci odpočtu času?"
+      },
+      "HideTemplates": {
+        "Hint": "Tato možnost je u příležitostných útoků vždy povolena. Po zaškrtnutí budou zcela skryty šablony ostatních automatizací v mém modulu používají šablony. NEBUDOU SKRYTÉ šablony automatizací a šablony vytvořené mimo můj modul.",
+        "Name": "Skrývat šablony?"
+      },
+      "PrimaryGM": {
+        "Hint": "",
+        "Name": "primaryGM"
+      },
+      "TokenMovementSpeed": {
+        "Hint": "",
+        "Name": "tokenMovementSpeed"
+      }
+    },
+    "SettingsMenu": {
+      "Headers": {
+        "Feature": "Schopnost",
+        "Enable": "Povolit?",
+        "TimeoutSeconds": "Časový limit (s)"
+      },
+      "ClassFeatures": {
+        "ChronalShift": {
+          "Description": "Dialog Chronálního posunu chronurgických kouzelníků.",
+          "Name": "Chronální posun"
+        },
+        "CuttingWords": {
+          "Description": "Dialog Slovního výpadu bardů Koleje znalostí.",
+          "Name": "Slovní výpad"
+        },
+        "DisableCuttingWordsMaxMiss": {
+          "Description": "Po zaškrtnutí bude výzva, pokud ani maximální Bardská kostka nemůže zásah ovlivnit, přeskočena.",
+          "Name": "Zakázat Slovní výpad při jistém selhání?"
+        },
+        "EnableAutoSucceedIndomitable": {
+          "Description": "Po zaškrtnutí Nezdolnost vždy při použití automaticky uspěje.",
+          "Name": "Povolit automatický úspěch Nezdolnosti?"
+        },
+        "EnableProtectionOnSuccess": {
+          "Description": "Po zaškrtnutí bude spouštěno pouze při úspěšném útoku.",
+          "Name": "Povolit Zaštítění jen při úspěchu?"
+        },
+        "FlashOfGenius": {
+          "Description": "Dialog Projevu génia Divotvůrců.",
+          "Name": "Projev génia"
+        },
+        "Indomitable": {
+          "Description": "Dialog Nezdolnosti bojovníků.",
+          "Name": "Nezdolnost"
+        },
+        "InstinctiveCharm": {
+          "Description": "Dialog Instinktivní zmámení kouzelníků očarovací školy.",
+          "Name": "Instinktivní zmámení"
+        },
+        "Interception": {
+          "Description": "Dialog Ochrany paladinů/bojovníků.",
+          "Name": "Ochrana"
+        },
+        "MagicUsersNemesis": {
+          "Description": "Dialog Nemesis sesilatelů magie hraničářů lovců nestvůr.",
+          "Name": "Nemesis sesilatelů magie"
+        },
+        "PoetryInMisery": {
+          "Description": "Dialog Bědné poezie bardů Koleje tragédie.",
+          "Name": "Bědná poezie"
+        },
+        "Protection": {
+          "Description": "Dialog Zaštítění paladinů/bojovníků.",
+          "Name": "Zaštítění"
+        },
+        "RainOfCinders": {
+          "Description": "Dialog Deště popele čarodějek Bouřlivého srdce.",
+          "Name": "Déšť popele"
+        },
+        "RestoreBalance": {
+          "Description": "Dialog Obnovení rovnováhy čarodějů mechanické magie.",
+          "Name": "Obnovení rovnováhy"
+        },
+        "Riposte": {
+          "Description": "Dialog Riposty bojovníků taktiků.",
+          "Name": "Riposta"
+        },
+        "TaleOfHubris": {
+          "Description": "Dialog Příběhu o pýše bardů Koleje tragédie.",
+          "Name": "Příběh o pýše"
+        },
+        "WitchesHex": {
+          "Description": "Dialog Čarodejnické kletby čarodějek Bouřlivého srdce.",
+          "Name": "Čarodejnická kletba"
+        }
+      },
+      "GenericFeatures": {
+        "OpportunityAttack": {
+          "Description": "Automaticky povolí účastníkům během boje příležitostné útoky.",
+          "Name": "Příležitostný útok"
+        },
+        "Sentinel": {
+          "Description": "když nepřítel zaútočí na spojence v dosahu, zobrazí dialog hráčům s odborností Strážce.",
+          "Name": "Strážce"
+        },
+        "MageSlayer": {
+          "Description": "Zobrazí dialog hráčům s odborností Zabiják mágů.",
+          "Name": "Zabiják mágů"
+        },
+        "LegendaryResistance": {
+          "Description": "Zobrazí dialog Legendárního odolání nestvůr.",
+          "Name": "Legendární odolání"
+        }
+      },
+      "Spells": {
+        "Counterspell": {
+          "Description": "Zobrazí dialog hráčům s Protikouzlem.",
+          "Name": "Protikouzlo"
+        },
+        "SilveryBarbs": {
+          "Description": "Zobrazí dialog hráčům se Stříbřitými ostny.",
+          "Name": "Stříbřité ostny"
+        },
+        "CounterspellSpellPenetration": {
+          "Description": "Povolí volitelnou odbornost Zkrvavený a zhmožděný: Průraznost kouzel.",
+          "Name": "Průraznost kouzel?"
+        },
+        "DisableSilveryBarbsOnNat20": {
+          "Description": "Zakázat po kritickém hodu na útok.",
+          "Name": "Zakázat při kritickém zásahu?"
+        },
+        "EnableSilveryBarbsOnNat20": {
+          "Description": "Povolit pouze po kritickém hodu na útok.",
+          "Name": "Povolit při kritickém zásahu?"
+        },
+        "PowerWordRebound": {
+          "Description": "Zobrazí dialog hráčům se Slovem moci 'Odraz'.",
+          "Name": "Slovo moci 'Odraz'"
+        },
+        "TemporalShunt": {
+          "Description": "Zobrazí dialog hráčům s Časovým odklonem.",
+          "Name": "Časový odklon"
+        }
+      },
+      "MonsterFeatures": {
+        "BurstOfIngenuity": {
+          "Description": "Zobrazí dialog pro nestvůry s Zábleskem geniality.",
+          "Name": "Záblesk geniality"
+        },
+        "DreadCounterspell": {
+          "Name": "Děsivé protikouzlo",
+          "Description": "Zobrazí dialog Vecnova Děsivého protikouzla."
+        }
+      },
+      "General": {
+        "Enable3prNoCombat": {
+          "Description": "Umožní reakce třetích stran i mimo aktivní boj.",
+          "Name": "Povolit reakce třetích stran mimo boj?"
+        },
+        "EnableIdentifyRestrictions": {
+          "Description": "Zabrání hráčům určovat předměty jinak než pomocí mého kouzla Určení.",
+          "Name": "Povolit omezení Určení?"
+        },
+        "IdentifyRestrictionMessage": {
+          "Description": "Vlastní zpráva, která se zobrazí uživatelům, pokud jsou omezeni.",
+          "Name": "Zpráva omezení Určení"
+        },
+        "EnableRegionWrapping": {
+          "Description": "Nahradí výchozí chování Foundry ověřující pouze střed tokenu vícebodovými testy pro lepší soulad s pravidly 5e (vyžaduje restart).",
+          "Name": "Povolit obalování oblastí?"
+        },
+        "EnableTimerFullAnim": {
+          "Description": "Upraví animaci odpočtu dialogu tak, aby pokryla celý titulkový pruh místo pouze jeho okraje.",
+          "Name": "Povolit plnou animaci odpočtu času?"
+        },
+        "HideTemplates": {
+          "Description": "Po zaškrtnutí budou šablony po svém umístění skryty.",
+          "Name": "Skrývat šablony?"
+        },
+        "TokenMovementSpeed": {
+          "Description": "Číselná hodnota rychlosti animace pohybu tokenu. Výchozí rychlost Foundry je 6.",
+          "Name": "Rychlost pohybu tokenu?"
+        },
+        "DebugEnabled": {
+          "Description": "Po zaškrtnutí se budou do konzole vypisovat záznamy validace procesu reakcí pro účely řešení problémů.",
+          "Name": "Povolit ladění?"
+        },
+        "MirrorThirdPartyDialogForGMs": {
+          "Name": "Zrcadlit dialogy třetích stran pro PJ?",
+          "Description": "Po zaškrtnutí budou dialogy třetích stran odeslány PJ i hráči. Obě strany mohou s dialogem interagovat a využít/odmítnout/pozastavit jej."
+        }
+      }
+    },
+    "UI": {
+      "InvalidInputNotNumber": "Neplatný vstup: Není to číslo.",
+      "InvalidInputNotNumberExample": "Neplatný vstup pro příklad číselného nastavení: Není to číslo.",
+      "None": "Žádné",
+      "Prone": "Ležící",
+      "Push": "Odtlačení",
+      "SaveSettings": "Uložit nastavení",
+      "Point": "Bod",
+      "Points": "Body",
+      "Target": "cíl",
+      "Targets": "cíle"
+    },
+    "Windows": {
+      "EnableClassFeatures": "Povolit schopnosti povolání",
+      "EnableGenericFeatures": "Povolit odbornosti",
+      "EnableMonsterFeatures": "Povolit schopnosti nestvůr",
+      "EnableSpells": "Povolit kouzla",
+      "GeneralSettings": "Obecná nastavení",
+      "PatreonSupport": "Podpora na Patreonu"
+    }
+  }
+}
