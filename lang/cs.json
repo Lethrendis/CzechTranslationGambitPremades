@@ -40,8 +40,8 @@
             "NoAdditionalAlliesInRange": "V okruhu 3 sáhů nejsou žádní další spojenci, tvé Nakažlivé léčení odeznívá."
           },
           "DrafynsBaneOfExcellence": {
-            "Natural20CancelledAttack": "Tvá přirozená 20 byla zrušena kvůli Drafynovu prokletí dokonalosti a útok selhává.",
-            "Natural20CancelledSave": "Tvá přirozená 20 byla zrušena kvůli Drafynovu prokletí dokonalosti a tvůj záchrana selhává."
+            "Natural20CancelledAttack": "Tvá přirozená 20 byla zrušena kvůli Drafynovu prokletí dokonalosti a útok selže.",
+            "Natural20CancelledSave": "Tvá přirozená 20 byla zrušena kvůli Drafynovu prokletí dokonalosti a v záchraně selžeš."
           },
           "ShroomOfDoom": {
             "MushroomCreatedOnBody": "Bytosti vyrostla na těle {mushroomCount} houba vlivem Pekelné houby.",
@@ -57,9 +57,9 @@
           "Bard": {
             "CollegeOfLore": {
               "CuttingWords": {
-                "CuttingWordsReducedAttackHit": "Bytost zasáhla Řezavým slovem, které snížilo její útok o {reduction}, ale přesto dokázala zasáhnout svůj cíl.",
-                "CuttingWordsReducedAttackMiss": "Bytost zasáhla Řezavým slovem, které snížilo její útok o {reduction}, a nedokázala zasáhnout svůj cíl.",
-                "DamageReduced": "Bytost zasáhla Řezavým slovem a její zranění je sníženo o {reduction}.",
+                "CuttingWordsReducedAttackHit": "Bytost byla zasažena Řezavým slovem, které snížilo její útok o {reduction}, ale přesto dokázala zasáhnout svůj cíl.",
+                "CuttingWordsReducedAttackMiss": "Bytost byla zasažena Řezavým slovem, které snížilo její útok o {reduction}, a nedokázala zasáhnout svůj cíl.",
+                "DamageReduced": "Bytost byla zasažena Řezavým slovem, které snížilo její zásah o {reduction}.",
                 "ReactionAvailable": "{actorName} má k dispozici reakci na {workflowType} vyvolané {itemProperName}.",
                 "SeemsNotBeEffectedBy": "Zdá se, že bytost není ovlivněna tvým {itemProperName}."
               }
@@ -106,7 +106,7 @@
           "Protection": {
             "AttackHitAnyway": "Použiješ svůj bojový styl 'Zaštítění', ale cíl přesto zasáhne {targetName}.",
             "FightingStyleCause": "Použiješ svůj bojový styl 'Zaštítění' a způsobíš, že cíl mine {targetName}.",
-            "TurnAdvantageToStraightRollHit": "Použiješ svůj bjový styl 'Zaštítění', abys změnil/a hod s Výhodou na normální hod, ale cíl přesto zasáhne {targetName}.",
+            "TurnAdvantageToStraightRollHit": "Použiješ svůj bojový styl 'Zaštítění', abys změnil/a hod s Výhodou na normální hod, ale cíl přesto zasáhne {targetName}.",
             "TurnAdvantageToStraightRollMiss": "Použiješ svůj bojový styl 'Zaštítění', abys změnil/a hod s Výhodou na normální hod, a způsobíš, že cíl mine {targetName}."
           },
           "Ranger": {
@@ -432,7 +432,7 @@
               "TaleOfHubris": {
                 "Prompts": {
                   "UseYourReaction": {
-                    "Default": "Chceš využít svou reakci k vyvolání {itemName} ro tuto přirozenou dvacítku {rollType}?"
+                    "Default": "Chceš využít svou reakci k vyvolání {itemName} pro tuto přirozenou dvacítku {rollType}?"
                   }
                 }
               }
@@ -464,7 +464,7 @@
           "Interception": {
             "Prompts": {
               "UseYourReaction": {
-                "Default": "Chceš využít svou reakci k vyvoláš {itemName} pro tento hod {rollType}?"
+                "Default": "Chceš využít svou reakci k vyvolání {itemName} pro tento hod {rollType}?"
               }
             },
             "PtsOf": "{points} b. z"
@@ -982,7 +982,7 @@
           "Recovered": "Použití Božské přízně obnoveno!"
         },
         "Candle": {
-          "DoNotAnyS": "Nemáš žádné zbývající {animType}s.",
+          "DoNotAnyS": "Už nemáš žádnou zbývající {animType}s.",
           "MissingDependency": "Modul Active Token Effects musí být aktivní"
         },
         "Matalotok": {
@@ -995,7 +995,7 @@
           "NotAvailable": "Nemáš žádná zbývající použití Berly chřadnutí"
         },
         "Torch": {
-          "DoNotAnyEs": "Nemáš žádné zbývající {animType}es."
+          "DoNotAnyEs": "Už nemáš žádnou zbývající {animType}es."
         }
       },
       "Spells": {
@@ -1080,7 +1080,7 @@
       },
       "EnableOpportunityAttack": {
         "Hint": "Po zaškrtnutí se na začátku boje vhodným účastníkům automaticky přidá položka 'Příležitistný útok' a na konci boje bude odebrána.",
-        "Name": "Povolit příležitistný útok?"
+        "Name": "Povolit příležitostný útok?"
       },
       "EnablePoetryInMisery": {
         "Hint": "Po zaškrtnutí se uživatelům s Bědnou poezií bude zobrazovat odpovídající dialog a při použití se automatizuje její vyhodnocení.",
@@ -1287,8 +1287,8 @@
           "Name": "Příběh o pýše"
         },
         "WitchesHex": {
-          "Description": "Dialog Čarodejnické kletby čarodějek Bouřlivého srdce.",
-          "Name": "Čarodejnická kletba"
+          "Description": "Dialog Čarodějnické kletby čarodějek Bouřlivého srdce.",
+          "Name": "Čarodějnická kletba"
         }
       },
       "GenericFeatures": {
